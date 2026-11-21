@@ -59,3 +59,13 @@ html{
   color: red;
   font-size: 14px;
 }
+
+.tab-head{
+  padding: 8px 12px;
+  background-color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.tab-head.active{
+  background-color: #f4aeae;
+}

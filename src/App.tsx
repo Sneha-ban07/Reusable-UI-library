@@ -2,6 +2,13 @@ import { useState } from 'react'
 import './App.css'
 import ButtonComp from './components/buttonComp'
 import InputComp from './components/InputComp'
+import TabComponent from './components/TabComponent';
+
+const tabs = [
+  { id: "profile", label: "Profile", content: "Profile content" },
+  { id: "settings", label: "Settings", content: "Settings content" },
+  { id: "billing", label: "Billing", content: "Billing content" },
+];
 
 function App() {
   const [name, setName] = useState('')
@@ -17,6 +24,8 @@ function App() {
       <hr></hr>
       <InputComp label='name' value={name} onChange={setName} placeholder='please enter name'></InputComp>
       <InputComp label='email' value={email} onChange={(e)=>setEmail(e)} placeholder='please enter email' error='errrrrrrorrr'></InputComp>
+      <hr></hr>
+      <TabComponent tabs={tabs}/>
     </>
   )
 }
