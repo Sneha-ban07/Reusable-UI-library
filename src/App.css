@@ -1,0 +1,61 @@
+html{
+  margin: 10px;
+}
+.btn{
+  border: 1px solid black;
+  border-radius: 5%;
+  padding: 8px 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.btn.btn-large{
+  width: 200px;
+}
+
+.btn.btn-medium{
+  width: 150px;
+}
+
+.btn.btn-small{
+  width: 100px;
+}
+
+.btn.btn-primary{
+  background-color: rgb(123, 239, 100);
+}
+
+.btn.btn-secondary{
+  background-color: rgb(52, 52, 249);
+}
+.btn.btn-danger{
+  background-color: rgb(244, 62, 86);
+}
+.btn:disabled{
+  opacity: 0.5;
+  color: black;
+  cursor:not-allowed
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.input-wrapper input {
+  padding: 8px;
+  border: 1px solid gray;
+  border-radius: 4px;
+}
+
+.input-wrapper .input-error {
+  border: 1px solid red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
